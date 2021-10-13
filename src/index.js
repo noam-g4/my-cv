@@ -16,11 +16,11 @@ function Main() {
 
   const Section = () => {
     switch (route) {
-      case 'my-cv/what_can_i_do':
+      case '/my-cv/what_can_i_do':
         return <Do />
-      case 'my-cv/what_have_i_done':
+      case '/my-cv/what_have_i_done':
         return <Done />
-      case 'my-cv/where_did_i_studied':
+      case '/my-cv/where_did_i_studied':
         return <Learned />
       default:
         return <Know />
