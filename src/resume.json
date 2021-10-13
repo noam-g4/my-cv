@@ -1,7 +1,7 @@
 {
   "profile": {
     "name": "Noam Yadgar",
-    "picture": "./assets/profile_picture.jpg",
+    "picture": "../assets/profile_picture.jpg",
     "caption": "> self-tought full-stack developer, a person of ideas and a problem solver",
     "home": "jerusalem",
     "birthday": "08/25/1990",
@@ -10,12 +10,12 @@
       {
         "name": "LinkedIn",
         "url": "https://www.linkedin.com/in/noam-yadgar-82ab4a63/",
-        "icon": "./assets/linkedin.svg"
+        "icon": "../assets/linkedin.svg"
       },
       {
         "name": "Youtube",
         "url": "https://www.youtube.com/tune4media",
-        "icon": "./assets/youtube.svg"
+        "icon": "../assets/youtube.svg"
       }
     ]
   },

@@ -5,14 +5,14 @@ module.exports = {
 
   output: {
     filename: 'bundle.js',
-    path: path.join(__dirname, 'public'),
+    path: path.join(__dirname, '/'),
   },
 
   mode: 'development',
 
   devServer: {
     static: {
-      directory: path.join(__dirname, 'public'),
+      directory: path.join(__dirname, '/'),
     },
     historyApiFallback: true,
     port: 3000,
