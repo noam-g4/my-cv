@@ -1,0 +1,38 @@
+$theme-colors: (
+  'primary': #1e6091,
+  'secondary': #6c757d,
+  'success': #43aa8b,
+  'info': #34a0a4,
+  'warning': #f9c74f,
+  'danger': #f94144,
+  'light': #e9ecef,
+  'dark': #293241,
+);
+
+@import '/node_modules/bootstrap/scss/bootstrap.scss';
+
+body {
+  font-weight: 300;
+  background-color: #efefef;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f100;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 2px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #fff;
+}
