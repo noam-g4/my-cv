@@ -1,13 +1,8 @@
-import React, { useEffect, createContext, useState } from 'react'
+import React, { createContext } from 'react'
 import './scss/index.scss'
+import data from './resume.json'
 import reactDOM from 'react-dom'
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Redirect,
-  useParams,
-} from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Redirect } from 'react-router-dom'
 
 import Know from './components/Know'
 import Do from './components/Do'
@@ -17,8 +12,6 @@ import Learned from './components/Learned'
 export const Context = createContext()
 
 function Main() {
-  const [resume, setResume] = useState(false)
-
   const route = window.location.pathname
 
   const Section = () => {
@@ -34,17 +27,11 @@ function Main() {
     }
   }
 
-  useEffect(() => {
-    fetch('./assets/resume.json')
-      .then(res => res.json())
-      .then(data => setResume(data))
-  }, [])
-
-  if (!resume) return null
+  if (!data) return null
 
   return (
     <Router>
-      <Context.Provider value={resume}>
+      <Context.Provider value={data}>
         <Switch>
           <Section />
           <Redirect to="/" />
