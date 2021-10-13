@@ -24,8 +24,7 @@ export default function Layout({ title, children, onSelect }) {
               <Nav.Item key={key}>
                 <Nav.Link
                   className="text-capitalize text-light"
-                  href={`#`}
-                  onClick={() => onSelect(key)}
+                  href={`/${key}`}
                 >
                   {key.split('_').join(' ')}
                 </Nav.Link>

@@ -1,9 +1,16 @@
 import React, { useEffect, createContext, useState } from 'react'
 import './scss/index.scss'
 import reactDOM from 'react-dom'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+  useParams,
+} from 'react-router-dom'
 
-import Do from './components/Do'
 import Know from './components/Know'
+import Do from './components/Do'
 import Done from './components/Done'
 import Learned from './components/Learned'
 
@@ -11,7 +18,21 @@ export const Context = createContext()
 
 function Main() {
   const [resume, setResume] = useState(false)
-  const [route, setRoute] = useState('what_do_i_know')
+
+  const route = window.location.pathname
+
+  const Section = () => {
+    switch (route) {
+      case '/what_can_i_do':
+        return <Do />
+      case '/what_have_i_done':
+        return <Done />
+      case '/where_did_i_studied':
+        return <Learned />
+      default:
+        return <Know />
+    }
+  }
 
   useEffect(() => {
     fetch('./assets/resume.json')
@@ -22,12 +43,14 @@ function Main() {
   if (!resume) return null
 
   return (
-    <Context.Provider value={resume}>
-      {route === 'what_do_i_know' ? <Know onSelect={setRoute} /> : null}
-      {route === 'what_can_i_do' ? <Do onSelect={setRoute} /> : null}
-      {route === 'what_have_i_done' ? <Done onSelect={setRoute} /> : null}
-      {route === 'where_did_i_learned' ? <Learned onSelect={setRoute} /> : null}
-    </Context.Provider>
+    <Router>
+      <Context.Provider value={resume}>
+        <Switch>
+          <Section />
+          <Redirect to="/" />
+        </Switch>
+      </Context.Provider>
+    </Router>
   )
 }
 
