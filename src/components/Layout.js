@@ -2,11 +2,13 @@ import React, { useContext } from 'react'
 import { Container, Row, Nav, Button } from 'react-bootstrap'
 import { TiExport } from 'react-icons/ti'
 import { intervalToDuration, formatDuration } from 'date-fns'
+import { useHistory } from 'react-router-dom'
 
 import { Context } from '../index'
 
 export default function Layout({ title, children, onSelect }) {
   const data = useContext(Context)
+  const history = useHistory()
   const { profile } = data
 
   const duration = intervalToDuration({
@@ -24,7 +26,7 @@ export default function Layout({ title, children, onSelect }) {
               <Nav.Item key={key}>
                 <Nav.Link
                   className="text-capitalize text-light"
-                  href={`/my-cv/${key}`}
+                  onClick={() => history.push(`/${key}`)}
                 >
                   {key.split('_').join(' ')}
                 </Nav.Link>

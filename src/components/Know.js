@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import { Button } from 'react-bootstrap'
+import { useHistory } from 'react-router-dom'
 
 import { Context } from '../'
 import Layout from './Layout'
@@ -7,6 +8,7 @@ import Unicornometer from './Unicornometer'
 
 export default function Know({ onSelect }) {
   const { what_do_i_know } = useContext(Context)
+  const history = useHistory()
   const { unicornometer, story } = what_do_i_know
 
   return (
@@ -17,7 +19,10 @@ export default function Know({ onSelect }) {
           <h4>a few words...</h4>
           <span>{story}</span>
           <br />
-          <Button className="mt-2" onClick={() => onSelect('what_can_i_do')}>
+          <Button
+            className="mt-2"
+            onClick={() => history.push('/what_can_i_do')}
+          >
             Checkout <strong>What Can I Do</strong>
           </Button>
         </div>
