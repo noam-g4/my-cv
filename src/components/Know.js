@@ -12,11 +12,15 @@ export default function Know({ onSelect }) {
   const { unicornometer, story } = what_do_i_know
 
   return (
-    <Layout title="What Do I Know?" onSelect={onSelect}>
+    <Layout
+      title="What Do I Know?"
+      onSelect={onSelect}
+      location="what_do_i_know"
+    >
       <div className="d-flex">
         <Unicornometer list={unicornometer} style={{ width: 'fit-content' }} />
         <div className="w-50 ms-4">
-          <h4>a few words...</h4>
+          <h4>a few words{' >'}</h4>
           <span>{story}</span>
           <br />
           <Button

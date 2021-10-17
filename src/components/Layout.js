@@ -6,7 +6,7 @@ import { useHistory } from 'react-router-dom'
 
 import { Context } from '../index'
 
-export default function Layout({ title, children, onSelect }) {
+export default function Layout({ title, children, location }) {
   const data = useContext(Context)
   const history = useHistory()
   const { profile } = data
@@ -25,7 +25,9 @@ export default function Layout({ title, children, onSelect }) {
             .map(key => (
               <Nav.Item key={key}>
                 <Nav.Link
-                  className="text-capitalize text-light"
+                  className={`text-capitalize nav ${
+                    key === location && 'active'
+                  }`}
                   onClick={() => history.push(`/${key}`)}
                 >
                   {key.split('_').join(' ')}
@@ -34,7 +36,7 @@ export default function Layout({ title, children, onSelect }) {
             ))}
           <Nav.Item>
             <Nav.Link
-              className="text-capitalize text-light"
+              className="text-capitalize nav"
               href={`mailto:${profile.email}`}
             >
               Contact Me
@@ -86,8 +88,8 @@ export default function Layout({ title, children, onSelect }) {
         </div>
       </Row>
       <div>
-        <h1 className="display-5 text-center border-bottom mb-2 text-secondary">
-          {title}
+        <h1 className="display-5 text-secondary py-3" style={{ zoom: 0.6 }}>
+          # {title}
         </h1>
         {children}
       </div>

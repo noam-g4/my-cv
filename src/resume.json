@@ -49,7 +49,8 @@
       { "subject": "Machine Learning", "progress": 22 },
       { "subject": "Sound Design", "progress": 99 },
       { "subject": "DSP", "progress": 42 }
-    ]
+    ],
+    "story": "You may have noticed that I am pretty focused on full-stack web-apps development. But, I have a strict policy of \"not binding my skills with specific technology.\" \nWhen I study something new, I try my best to understand its core ideas and foundations. Because technologies are constantly evolving and changing, I think that this philosophy serves me best. Allowing me to adopt new ideas and always remain relevant."
   },
   "what_have_i_done": {
     "jobs": [

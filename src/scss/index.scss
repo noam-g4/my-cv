@@ -9,10 +9,11 @@ $theme-colors: (
   'dark': #293241,
 );
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
 @import '/node_modules/bootstrap/scss/bootstrap.scss';
 
 body {
-  font-weight: 300;
+  font-family: 'Roboto Mono', monospace;
   background-color: #efefef;
 }
 
@@ -35,4 +36,11 @@ body {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #fff;
+}
+
+.nav {
+  color: map-get($theme-colors, 'light');
+  &.active {
+    color: map-get($theme-colors, 'warning');
+  }
 }

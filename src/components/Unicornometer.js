@@ -25,7 +25,7 @@ export default function Unicornometer({ list, style = {} }) {
             style={{ width: '30vw' }}
             now={item.progress}
             label={`${item.progress}%`}
-            variant={item.progress > 79 ? 'success' : 'primary'}
+            variant={'success'}
           />
         </div>
       ))}
