@@ -13,8 +13,11 @@ $theme-colors: (
 @import '/node_modules/bootstrap/scss/bootstrap.scss';
 
 body {
-  font-family: 'Roboto Mono', monospace;
   background-color: #efefef;
+}
+
+#root {
+  white-space: pre-line;
 }
 
 /* width */
@@ -35,7 +38,7 @@ body {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #fff;
+  background: #ebebeb;
 }
 
 .nav {

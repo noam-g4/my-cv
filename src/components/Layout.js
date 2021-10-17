@@ -45,7 +45,7 @@ export default function Layout({ title, children, location }) {
 
           {profile.meta.map(link => (
             <Nav.Item key={link.url}>
-              <Nav.Link href={link.url}>
+              <Nav.Link href={link.url} target="_blank">
                 <img
                   alt={link.name}
                   src={link.icon}
@@ -71,7 +71,7 @@ export default function Layout({ title, children, location }) {
           <img
             alt={profile.name}
             src={profile.picture}
-            style={{ width: '100px', borderRadius: '50%' }}
+            style={{ width: '75px', borderRadius: '50%' }}
           />
           <h1 className="text-light display-6">{profile.name}</h1>
 

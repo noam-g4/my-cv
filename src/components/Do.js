@@ -21,7 +21,7 @@ export default function Do({ onSelect }) {
           <span>{story}</span>
           <br />
           <Button
-            className="mt-2"
+            className="mt-4"
             onClick={() => history.push('/what_have_i_done')}
           >
             Checkout <strong>What Have I Done</strong>

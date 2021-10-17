@@ -38,7 +38,7 @@
       { "subject": "MySQL", "progress": 50, "icon": "" },
       { "subject": "Arduino", "progress": 45, "icon": "" }
     ],
-    "story": "My orientation is mostly towards web-app development and \nproblem-solving in general. \nI am constantly learning new technologies and topics. \nSince I love math, my programming style is \nleaning more towards the Functional-Programming paradigm \nbut I am also very comfortable with the \nObject-Oriented Programming style."
+    "story": "My orientation is mostly towards web-app development and \nproblem-solving in general. \nI am constantly learning new technologies and topics. \n\nSince I love math, my programming style is \nleaning more towards the Functional-Programming paradigm \nbut I am also very comfortable with the \nObject-Oriented Programming style."
   },
   "what_can_i_do": {
     "unicornometer": [
@@ -50,14 +50,14 @@
       { "subject": "Sound Design", "progress": 99 },
       { "subject": "DSP", "progress": 42 }
     ],
-    "story": "You may have noticed that I am pretty focused on full-stack web-apps development. But, I have a strict policy of \"not binding my skills with specific technology.\" \nWhen I study something new, I try my best to understand its core ideas and foundations. Because technologies are constantly evolving and changing, I think that this philosophy serves me best. Allowing me to adopt new ideas and always remain relevant."
+    "story": "You may have noticed that I am pretty focused on full-stack web-apps development. But, I have a strict policy of \"not binding my skills with specific technologies.\" \n\nWhen I study something new, I try my best to understand its core ideas and foundations. Because technologies are constantly evolving and changing, I think that this philosophy serves me best. Allowing me to adopt new ideas and always remain relevant."
   },
   "what_have_i_done": {
     "jobs": [
       {
         "company": "MusicianPro",
-        "icon": "",
-        "website": "musician-pro.com",
+        "icon": "./assets/mspro.png",
+        "website": "https://musician-pro.com",
         "description": "A musical Ed-Tech startup that let's teachers\n\t\tmanage their courses and student practice music by playing",
         "timeline": [
           { "role": "CTO", "from": "03/01/2020", "to": "present" },
@@ -71,8 +71,8 @@
       },
       {
         "company": "tune4media",
-        "website": "tune4media.com",
-        "icon": "",
+        "icon": "./assets/t4m.png",
+        "website": "https://tune4media.com",
         "description": "A music production studio and online shop for audio software tools",
         "timeline": [
           {
@@ -95,7 +95,7 @@
       },
       {
         "company": "Music Industry",
-        "icon": "",
+        "icon": "./assets/music.svg",
         "website": "youtube.com/tune4media",
         "description": "Working freelancer as a proffesional musician",
         "timeline": [
@@ -117,10 +117,10 @@
         ]
       }
     ],
-    "story": "After my release from the Israeli Intelligence Corps (2012), \nI started to work as a cameras salesman in a small photoshop. \nDuring this time, I've started to build my music career and became a music teacher. \nA year later, I became a freelance music producer, player and created a blog called \"tune4media\".\n\nA few years later. I've felt that my natural step forward, from being a music producer. \nIs to start developing tools for other musicians and music producers.  \nSo I've started with programming tools using MaxMSP and then quickly moved to VST's - which are DLL files (plugins) written commonly in C++.\nIn 2018, I wanted tune4media to be an e-commerce website that will sell my plugins. \nInstead of paying for a third-party service, \nI've decided to build the website on my own. \nI've started to learn HTML, CSS, Javascript, and PHP. \nIn January 2019, tune4media.com officially became an online e-commerce website that is still active to this day.\nAt the start of 2020, I've joined a small team and together co-founded MusicianPro - \nan online music learning platform that lets teachers manage their courses and students play musical exercises and get real-time feedback. \nI took the role of CTO. I've had to quickly learn and adopt new technologies such as Node.js, AWS, Python, React, MongoDB, and more. \nI've learned how to work with other developers, manage small teams and projects. \nMostly, I realized that I have a passion for creating stuff, learning, and problem-solving."
+    "story": "After my release from the Israeli Intelligence Corps (2012), \nI started to work as a cameras salesman in a small photoshop. \nDuring this time, I've started to build my music career and became a music teacher. \nA year later, I became a freelance music producer, player and created a blog called \"tune4media\".\n\nA few years later. I've felt that my natural step forward, from being a music producer. \nIs to start developing tools for other musicians and music producers.  \nSo I've started with programming tools using MaxMSP and then quickly moved to VST's - which are DLL files (plugins) written commonly in C++.\n\nIn 2018, I wanted tune4media to be an e-commerce website that will sell my plugins. \nInstead of paying for a third-party service, \nI've decided to build the website on my own. \nI've started to learn HTML, CSS, Javascript, and PHP. \nIn January 2019, tune4media.com officially became an online e-commerce website that is still active to this day.\n\nAt the start of 2020, I've joined a small team and together co-founded MusicianPro - \nan online music learning platform that lets teachers manage their courses and students play musical exercises and get real-time feedback. \nI took the role of CTO. I've had to quickly learn and adopt new technologies such as Node.js, AWS, Python, React, MongoDB, and more. \nI've learned how to work with other developers, manage small teams and projects. \nMostly, I realized that I have a passion for creating stuff, learning, and problem-solving."
   },
 
   "where_did_i_studied": {
-    "story": "I am an autodidact, curious, and I love to learn. '\nI have had a passion for creating stuff ever since I can remember myself. \nMy philosophy is to study new skills whenever required and not being fixed only to relying on previous knowledge. \n\nMy first introduction to programming was around the age of 7. \nI studied Visual-Basic. Then, I've formally learned Computer-science in high school, using Pascal as the language (2005-2008). \n\nIn 2017, I started to study DSP, and most of the Math I was doing, was made using Python.\nIn 2018 I started to learn C++ to write audio-DSP plugins for the music industry. \nIn the same year, I became interested in web development, so I've studied PHP, Javascript, HTML, and CSS. \nI've built my e-commerce website (tune4media.com).\n\nIn March 2020, I joined a team, and together we founded MusicianPro - a full-blown web platform for remote music education. \nI took the role of CTO, and during this year, I've had to study and adopt new skills and technologies at a very intensive pace. \nThis role has led me to improve my coding skills dramatically. I've also extended my knowledge in other fields such as data science, DevOps, management, and more."
+    "story": "I am an autodidact, curious, and I love to learn. \nI have had a passion for creating stuff ever since I can remember myself. \nMy philosophy is to study new skills whenever required and not being fixed only to relying on previous knowledge. \n\nMy first introduction to programming was around the age of 7. \nI studied Visual-Basic. Then, I've formally learned Computer-science in high school, using Pascal as the language (2005-2008). \n\nIn 2017, I started to study DSP, and most of the Math I was doing, was made using Python.\nIn 2018 I started to learn C++ to write audio-DSP plugins for the music industry. \nIn the same year, I became interested in web development, so I've studied PHP, Javascript, HTML, and CSS. \nI've built my e-commerce website (tune4media.com).\n\nIn March 2020, I joined a team, and together we founded MusicianPro - a full-blown web platform for remote music education. \nI took the role of CTO, and during this year, I've had to study and adopt new skills and technologies at a very intensive pace. \nThis role has led me to improve my coding skills dramatically. I've also extended my knowledge in other fields such as data science, DevOps, management, and more."
   }
 }
