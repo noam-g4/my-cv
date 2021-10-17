@@ -28,7 +28,7 @@ export default function Layout({ title, children, location }) {
                   className={`text-capitalize nav ${
                     key === location && 'active'
                   }`}
-                  onClick={() => history.push(`/${key}`)}
+                  onClick={() => history.push(`/my-cv/${key}`)}
                 >
                   {key.split('_').join(' ')}
                 </Nav.Link>
