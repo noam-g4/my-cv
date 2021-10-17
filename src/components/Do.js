@@ -22,7 +22,7 @@ export default function Do({ onSelect }) {
           <br />
           <Button
             className="mt-4"
-            onClick={() => history.push('/what_have_i_done')}
+            onClick={() => history.push('/my-cv/what_have_i_done')}
           >
             Checkout <strong>What Have I Done</strong>
           </Button>

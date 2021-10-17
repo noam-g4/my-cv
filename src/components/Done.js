@@ -83,7 +83,7 @@ export default function Done({ onSelect }) {
           <br />
           <Button
             className="mt-4"
-            onClick={() => history.push('/where_did_i_studied')}
+            onClick={() => history.push('/my-cv/where_did_i_studied')}
           >
             Checkout <strong>Where Did I Studied</strong>
           </Button>

@@ -25,7 +25,7 @@ export default function Know({ onSelect }) {
           <br />
           <Button
             className="mt-4"
-            onClick={() => history.push('/what_can_i_do')}
+            onClick={() => history.push('/my-cv/what_can_i_do')}
           >
             Checkout <strong>What Can I Do</strong>
           </Button>
