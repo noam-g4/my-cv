@@ -18,10 +18,10 @@ function Main() {
     <Router>
       <Context.Provider value={data}>
         <Switch>
-          <Route path="/what_can_i_do" component={Do} />
-          <Route path="/what_have_i_done" component={Done} />
-          <Route path="/where_did_i_studied" component={Learned} />
-          <Route path="/" component={Know} />
+          <Route path="/my-cv/what_can_i_do" component={Do} />
+          <Route path="/my-cv/what_have_i_done" component={Done} />
+          <Route path="/my-cv/where_did_i_studied" component={Learned} />
+          <Route path="/my-cv/" component={Know} />
         </Switch>
       </Context.Provider>
     </Router>
