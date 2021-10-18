@@ -30,6 +30,7 @@
       { "subject": "MongoDB", "progress": 69, "icon": "" },
       { "subject": "C++", "progress": 45, "icon": "" },
       { "subject": "Python", "progress": 69, "icon": "" },
+      { "subject": "Docker", "progress": 69, "icon": "" },
       { "subject": "Haskell", "progress": 29, "icon": "" },
       { "subject": "MaxMSP", "progress": 80, "icon": "" },
       { "subject": "Illustrator", "progress": 79, "icon": "" },
