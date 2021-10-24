@@ -55,17 +55,15 @@ export default function Layout({ title, children, location }) {
             </Nav.Item>
           ))}
 
-          <Button
-            variant="secondary"
-            className="ms-auto d-none d-sm-block"
-            size="sm"
-            style={{ width: 'fit-content' }}
+          <a
+            href="./noam-yadgar-cv.pdf"
+            className="btn btn-secondary ms-auto d-none d-sm-block btn-sm"
+            download
+            style
           >
-            <a href="./noam-yadgar-cv.pdf" download>
-              <TiExport className="mb-1 me-1" />
-              Export PDF
-            </a>
-          </Button>
+            <TiExport className="mb-1 me-1" />
+            Export PDF
+          </a>
         </Nav>
       </Row>
       <Row className="bg-primary p-3">
