@@ -59,7 +59,7 @@
         "company": "MusicianPro",
         "icon": "./assets/mspro.png",
         "website": "https://musician-pro.com",
-        "description": "A musical Ed-Tech startup that let's teachers\n\t\tmanage their courses and students practice music by playing",
+        "description": "A musical Ed-Tech startup that allows teachers\n\t\tmanage their courses and students practice music by playing",
         "timeline": [
           { "role": "CTO", "from": "03/01/2020", "to": "present" },
           {
