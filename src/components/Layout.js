@@ -59,7 +59,6 @@ export default function Layout({ title, children, location }) {
             href="./noam-yadgar-cv.pdf"
             className="btn btn-secondary ms-auto d-none d-sm-block btn-sm"
             download
-            style
           >
             <TiExport className="mb-1 me-1" />
             Export PDF
