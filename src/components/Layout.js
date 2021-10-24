@@ -61,8 +61,10 @@ export default function Layout({ title, children, location }) {
             size="sm"
             style={{ width: 'fit-content' }}
           >
-            <TiExport className="mb-1 me-1" />
-            Export PDF
+            <a href="./noam-yadgar-cv.pdf" download>
+              <TiExport className="mb-1 me-1" />
+              Export PDF
+            </a>
           </Button>
         </Nav>
       </Row>
